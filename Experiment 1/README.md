@@ -1,4 +1,4 @@
-# Computer-Lab
+# Analog to Digital Conversion & Pulse Width Modulation
 This experiment had four main objectives. 
 The microcontroller used is the Freescale HCS12X
 
