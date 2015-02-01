@@ -1,5 +1,6 @@
 # Computer-Lab
 This experiment had four main objectives. 
+The microcontroller used is the Freescale HCS12X
 
 The first objective was to test the analog to digital converter using a potentiometer. This included connecting a potentiometer as well as two seven segment LEDs using VHDL. Analog information had to be collected at the potentiometer, sent through port T, converted to digital,  then through the FPGA board to an LED.  VHDL describes the conversion of raw numbers to readable hexadecimal on the LEDs. 
 
