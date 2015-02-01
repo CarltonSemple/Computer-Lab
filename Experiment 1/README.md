@@ -8,4 +8,4 @@ The next objective of this experiment was to test a servo motor with a function 
 
 The third objective was to test the servo motor with the microcontroller’s PWM unit. This required the modification of data in Pulse Width Registers and was eventually crucial to getting proper movement of the motor.
 
-The final objective to this experiment was to replace the potentiometer with a photodiode to detect ambient light. This was implemented first without a filtering algorithm, and then later an algorithm for filtering was added.  
+The final objective to this experiment was to replace the potentiometer with a photodiode to detect ambient light. This was implemented first without a filtering algorithm, and then later an algorithm for filtering was added.
