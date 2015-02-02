@@ -8,12 +8,12 @@ void main(void)
      ATD0CTL1_SRES1= 0;
      ATD0CTL3_DJM= 1;		// right justification of data
      DDRT=0xFF;				// change Port T's direction to output
-     PWME_PWME0=1;
-     PWMPOL_PPOL0=1;
-     PWMCLK_PCLK0=0; // select clock A
-     PWMPRCLK_PCKA0=1;
-     PWMPRCLK_PCKA1=1;
-     PWMPRCLK_PCKA2=1;
+     PWME_PWME0=1;			// enable PWM
+     PWMPOL_PPOL0=1;			// polarity
+     PWMCLK_PCLK0=0; 			// select clock A
+     PWMPRCLK_PCKA0=1;			// clock A resolution
+     PWMPRCLK_PCKA1=1;			// clock A resolution
+     PWMPRCLK_PCKA2=1;			// clock A resolution
      
     
     int counter=0;
@@ -24,7 +24,7 @@ void main(void)
 		int temp;
 		for(i=0; i<256; i++)
 		{
-			ATD0CTL5=0x00			 // Scan from 1 channel and perform a single conversion sequence
+			ATD0CTL5=0x00		 // Scan from 1 channel and perform a single conversion sequence
 			 
 			while(!ATD0STAT0_SCF){}  // Wait for the Sequence Complete Flag
 			temp += ATD0DR0L;        // Add received data to running total
